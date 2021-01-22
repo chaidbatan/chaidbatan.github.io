@@ -9,18 +9,19 @@ body, html {
      font-family: 'Old Standard TT', serif;
 
 }
+h1 {
+    text-transform: uppercase;
+}
 #title {
     text-align: center;
-    text-transform: uppercase;
     margin-top: 10%;
     margin-bottom: 5%;
 }
 #img-caption {
-    top: 40%;
-    position: absolute;
+    position: relative;
     max-width: 30%;
     font-family: 'Old Standard TT', Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
+    font-size: 16px;
 }
 h3 {
     text-transform: uppercase;
@@ -51,10 +52,10 @@ p {
     }
     
 }
- @media (max-width: 1000px) {
+ /*@media (max-width: 1000px) {
     #img-caption {
-        top: 20%;
+        margin-top: 20%;
         position: absolute;
         max-width: 30%;
     }
-} 
+} */
