@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div class="header">
+            <h1 id="title">Customer Satisfaction Survey</h1>
+            <p id="description">Your satisfaction matters</p>
+        </div>
+        <div class="form">
+            <form id="survey-form">
+                <div class="bio">
+                    <label id="name-label" for="Name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                    <label id="number-label" for="Age">Age</label>
+                    <input type="number" name="age" id="number" min="16" max="99" placeholder="Age">
+                    <label id="email-label" for="Name">Email</label>
+                    <input type="email" name="email" id="email" placeholder="email@gmail.com">
+                </div>
+                <div>
+                    <label for="status">Current Employment Status</label>
+                    <select name="employment-status" id="status">
+                        <option value="student">Student</option>
+                        <option value="employed">Employed</option>
+                        <option value="unemployed">Unemployed</option>
+                        <option value="preferNo">Prefer not to say</option>
+                    </select>
+                </div>
+                <div>
+                    <p>How long have you been using our service?</p>
+                    <input type="radio" name="duration" id="less-than-month" value="less-than-month" checked>
+                    <label for="radio">Less than a month</label>
+                    <input type="radio" name="duration" id="months" value="months" checked>
+                    <label for="radio">1-6 Months</label>
+                    <input type="radio" name="duration" id="more-than-six" value="more-than-six" checked>
+                    <label for="radio">6+ months</label>
+                    <input type="radio" name="duration" id="more-than-year" value="more-than-year" checked>
+                    <label for="radio">1+ year</label>
+                </div>
+                <div>
+                    <label for="checkbox">For what reason did you avail our service?</label>
+                    <input type="checkbox" name="reason" id="affordable" value="affordable">
+                    <label for="affordable">Affordable</label>
+                    <input type="checkbox" name="reason" id="fast" value="fast">
+                    <label for="fast">Fast</label>
+                    <input type="checkbox" name="reason" id="reliable" value="reliable">
+                    <label for="reliable">Reliable</label>
+                    <input type="checkbox" name="reason" id="accurate" value="accurate">
+                    <label for="accurate">Accurate</label>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
