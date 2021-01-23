@@ -30,41 +30,38 @@ body, html {
     max-height: 739px;
 }
 
-h1, h3 {
+h1 {
     text-transform: uppercase;
     border: white;
-}
-h1 {
     font-size: 32pt;
 }
 h2 {
     font-size: 26pt;
 }
 h3 {
+    text-transform: uppercase;
+    border: white;
     font-size: 22pt;
+    text-align: center;
+    max-width: 700px;
 }
 p {
     font-size: 15pt;
+    text-align: center;
+    max-width: 700px;
 }
 
 #tribute-info {
     font-size: 17pt;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
- p, h3 {
-    text-align: center;
-    margin-left: 50px;
-    margin-right: 100px;
-    max-width: 500px;
 }
 div {
     margin-bottom: 70px;
 }
-
 
 .flex-left {
     display: flex;
@@ -83,6 +80,7 @@ div {
     max-height: 500px;
     border-radius: 15px;
 }
+
 #tribute-link {
     text-align: center;
     color: white;
@@ -118,5 +116,13 @@ div {
     }
     .resize-img {
         margin-bottom: 8%;
+    }
+}
+@media (min-width: 1188px) {
+    .right {
+        margin-left: 5%;
+    }
+    .left {
+        margin-right: 5%;
     }
 }
