@@ -2,7 +2,6 @@
 
 body, html {
      height: 100%;
-    /* margin-left: 6%; */
      padding: 0;
      color: white;
      background-color: black;
@@ -12,16 +11,18 @@ body, html {
 #main {
     display: flex;
     justify-content: center;
+    margin-top: 5%;
 }
 #title {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 7%;
     margin-bottom: 5%;
     margin-right: 5%;
 }
 
 #image {
     display: block;
+    margin-top: 3%;
     margin-left: auto;
     margin-right: 5%;
     width: 100%; 
@@ -45,12 +46,6 @@ h3 {
 p {
     font-size: 15pt;
 }
-/* #img-caption {
-    font-family: 'Old Standard TT', Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
-    float: right;
-    padding: 50px;
-} */
 
 #tribute-info {
     font-size: 17pt;
@@ -88,10 +83,14 @@ div {
     max-height: 500px;
     border-radius: 15px;
 }
+#tribute-link {
+    text-align: center;
+    color: white;
+} 
 
 @media (max-width: 1188px) {
     #main {
-        margin-top: 5%;
+        margin-top: 1%;
         display: flex;
         text-align: center;
         align-items: center;
@@ -103,17 +102,12 @@ div {
         text-align: center;
         align-items: center;
         flex-direction: column;
-       /* padding: 0;
-        margin-left: auto;
-        margin-right: auto; */
+       
     }
-   /* #image, #title {
-        margin: auto;
-    } */
+   
     #img-div, #img-caption, #tribute-info {
         text-align: center;
-       /* display: flex;
-        align-items: center; */
+      
     }
     #img-caption {
         display: flex;
@@ -126,14 +120,3 @@ div {
         margin-bottom: 8%;
     }
 }
-/*@media (max-width: 1119px) {
-    .flex-right, .flex-right {
-        margin: 2%;
-    }
-} */
-
-/*@media (min-width: 1188px) {
-    #title {
-        position: absolute;
-    }
-} */
