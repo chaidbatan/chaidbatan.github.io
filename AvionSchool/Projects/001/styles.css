@@ -54,7 +54,6 @@ p {
 #tribute-info {
     font-size: 17pt;
     margin-bottom: 15%;
-    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
