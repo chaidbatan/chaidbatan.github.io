@@ -24,6 +24,7 @@ body {
     align-items: flex-start;
     flex-direction: column;
     background-color: #253140;
+    opacity: 0.93;
     color: blanchedalmond;
     margin: auto;
     padding: 0 30px 30px 30px;
