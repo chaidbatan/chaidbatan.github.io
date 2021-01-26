@@ -42,6 +42,9 @@ text, #name-label, #email-label, #number-label {
     border-radius: 5px;
     line-height: 200%;
 }
+select {
+    padding: 5px;
+}
 textarea {
     width: 100%;
     resize: vertical;
