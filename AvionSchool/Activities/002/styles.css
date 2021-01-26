@@ -2,27 +2,39 @@
 
 * {
     font-family: 'glacial indifference', open sans;
+    
+}
+body {
+    background: url(images/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .header {
+    color: #253140;
+    font-size: 26px;
+    max-width: 700px;
     text-align: center;
-    font-size: 40px;
+    margin: auto;
 }
 #form {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    background-color: black;
+    background-color: #253140;
     color: blanchedalmond;
-    padding: 30px;
     margin: auto;
+    padding: 0 30px 30px 30px;
     font-size: 20px;
     line-height: 1.6;
     border-radius: 5px;
     max-width: 500px;
 }
-text {
-    padding-top: 1.5em;
+
+text, #name-label, #email-label, #number-label {
+    padding-top: 1em;
 }
 
 .inputs, select {
@@ -45,4 +57,7 @@ button:hover {
     color: #FFFCF2;
     background-color: #556F79;
     cursor: pointer;
-  }
+}
+.margin-top {
+    margin-top: 20px;
+}
