@@ -37,14 +37,13 @@ body {
 text, #name-label, #email-label, #number-label {
     padding-top: 1em;
 }
-
+option {
+    font-size: 16px;
+}
 .inputs, select {
     width: 100%;
     border-radius: 5px;
-    line-height: 200%;
-}
-select {
-    padding: 5px;
+    padding: 7px;
 }
 textarea {
     width: 100%;
