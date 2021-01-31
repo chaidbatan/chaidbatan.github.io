@@ -15,9 +15,10 @@ body {
 .row-item1 {
     grid-row: 1;
     grid-column: 2;
-    justify-content: center;
     text-align: center;
     font-size: 3vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
     color: #352109;
 }
 .chessboard {
@@ -58,9 +59,6 @@ body {
     font-size: 4vw;
     text-align: center;
 }
-.item-1:hover, .item-2:hover {
-    cursor: pointer;
-}
 .item-2 {
     background-color:/* #aa8351; */ #c5a880;
     width: 5vw;
@@ -68,4 +66,7 @@ body {
     font-size: 4vw;
     text-align: center;
 
+}
+.item:hover {
+    cursor: pointer;
 }
