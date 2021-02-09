@@ -2,17 +2,14 @@
 * {
     text-align: center;
     margin: 0;
-    padding: 0;
 }
 h1, h2, h3 {
     font-family: 'Market Deco', sans-serif;                    
 }
-.container {
-    display: block;
-}
 #header {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
     border: 2px solid black;
     background: #000;
     color: #fff;
@@ -20,10 +17,18 @@ h1, h2, h3 {
 ul {
     list-style: none;
 }
+#header-img {
+    display: grid;
+    grid-row: 2;
+    justify-content: center;
+}
+#nav-bar {
+    display: grid;
+    grid-row: 1;
+}
 /* NAV BAR */
-#nav-bar .menu li a {
+#nav-bar li a {
     display: inline-block;
-    padding: 15px;
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
@@ -34,18 +39,24 @@ ul {
 }
 #nav-bar .open-menu {
     font-size: 2rem;
-    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+.menu, #close-menu {
     display: none;
     cursor: pointer;
 }
 /* END OF NAV BAR */
 
 #features {
-    display: block;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
 
 }
 /* DESKTOP MODE */
-@media (min-width: 400px) {
+@media (min-width: 418px) {
     .nav-icon {
     display: none;
     }
@@ -56,10 +67,6 @@ ul {
         display: grid;
         grid-template-columns: auto auto;
         border: 2px solid black;
-    }
-    #features {
-        display: grid;
-        grid-template-columns: repeat(3, auto);
     }
 
 }
