@@ -2,17 +2,20 @@
 * {
     text-align: center;
     margin: 0;
+    font-size: 1.5rem;
 }
 h1, h2, h3 {
     font-family: 'Market Deco', sans-serif;                    
 }
 #header {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 10% 90%;
     justify-content: space-between;
     border: 2px solid black;
     background: #000;
     color: #fff;
+    position: fixed;
+    width: 100%;
 }
 ul {
     list-style: none;
@@ -52,7 +55,7 @@ ul {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    justify-content: center;
+    text-align: center;
 
 }
 /* DESKTOP MODE */
