@@ -10,7 +10,6 @@ function show() {
     menu.style.display = 'block';
     closeMenu.style.display = 'block';
     openMenu.style.display = 'none';
-    menu.style.top = '0';
 }
 function hide() {
     menu.style.display = 'none';

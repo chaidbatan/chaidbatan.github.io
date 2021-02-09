@@ -4,6 +4,10 @@
     margin: 0;
     font-size: 1.5rem;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+}
 h1, h2, h3 {
     font-family: 'Market Deco', sans-serif;                    
 }
@@ -14,7 +18,6 @@ h1, h2, h3 {
     border: 2px solid black;
     background: #000;
     color: #fff;
-    position: fixed;
     width: 100%;
 }
 ul {
@@ -40,9 +43,8 @@ ul {
 #nav-bar .menu li a:hover {
     background: pink;
 }
-#nav-bar .open-menu {
+#nav-bar #open-menu {
     font-size: 2rem;
-    display: none;
     cursor: pointer;
 }
 .menu, #close-menu {
@@ -60,9 +62,6 @@ ul {
 }
 /* DESKTOP MODE */
 @media (min-width: 418px) {
-    .nav-icon {
-    display: none;
-    }
     .container {
         display: block;
     }
