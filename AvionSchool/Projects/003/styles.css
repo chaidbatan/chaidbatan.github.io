@@ -81,7 +81,7 @@ ul {
 
 body {
     margin: 0;
-    background-color: #ddc9b4;
+    background-color: #d1d3d9;
 }
 .container {
     display: grid;
@@ -93,18 +93,18 @@ body {
 }
 h1, h2, h3, h4, h5 {
     font-family: 'Market Deco', sans-serif;
-    color: #2a3d45;     
+    color: #3f413c;     
 
 }
 p {
-    color: #2a3d45;
+    color: #3f413c;
 }
 button {
-    color: #ddc9b4;
-    background-color: #c17c74;
+    color: #3f413c;
+    background-color: rgb(201, 167, 188);
 }
 #header {
-    background: #c17c74;
+    background: rgb(201, 167, 188);
     color: blanchedalmond;
     position: fixed;
     width: 100%;
@@ -159,4 +159,5 @@ a, li {
 #banner {
   max-width: 100%;
   height: auto;
+  margin: 0;
 }
