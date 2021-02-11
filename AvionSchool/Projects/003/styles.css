@@ -1,12 +1,10 @@
 @import url('http://fonts.cdnfonts.com/css/market-deco');
+/*
 * {
-    text-align: center;
     margin: 0;
-    font-size: 1.5rem;
 }
 .container {
     display: flex;
-    flex-direction: column;
 }
 h1, h2, h3 {
     font-family: 'Market Deco', sans-serif;                    
@@ -16,9 +14,11 @@ h1, h2, h3 {
     grid-template-columns: 10% 90%;
     justify-content: space-between;
     border: 2px solid black;
-    background: #000;
+    background: pink;
     color: #fff;
     width: 100%;
+    
+    z-index: 1;
 }
 ul {
     list-style: none;
@@ -27,12 +27,16 @@ ul {
     display: grid;
     grid-row: 2;
     justify-content: center;
+    height: 50px;
+}
+.logo {
+    height: 50px;
 }
 #nav-bar {
     display: grid;
     grid-row: 1;
+    height: 50px;
 }
-/* NAV BAR */
 #nav-bar li a {
     display: inline-block;
     text-decoration: none;
@@ -43,16 +47,17 @@ ul {
 #nav-bar .menu li a:hover {
     background: pink;
 }
-#nav-bar #open-menu {
-    font-size: 2rem;
+#open-menu {
+    height: 100px;
     cursor: pointer;
 }
 .menu, #close-menu {
     display: none;
     cursor: pointer;
 }
-/* END OF NAV BAR */
-
+#close-menu {
+    height: 50px;
+}
 #features {
     display: flex;
     align-items: flex-start;
@@ -60,7 +65,7 @@ ul {
     text-align: center;
 
 }
-/* DESKTOP MODE */
+
 @media (min-width: 418px) {
     .container {
         display: block;
@@ -71,4 +76,87 @@ ul {
         border: 2px solid black;
     }
 
+}
+*/
+
+body {
+    margin: 0;
+    background-color: #ddc9b4;
+}
+.container {
+    display: grid;
+    grid-template-rows: repeat(7, auto);
+}
+.items {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Market Deco', sans-serif;
+    color: #2a3d45;     
+
+}
+p {
+    color: #2a3d45;
+}
+button {
+    color: #ddc9b4;
+    background-color: #c17c74;
+}
+#header {
+    background: #c17c74;
+    color: blanchedalmond;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: space-between;
+}
+#nav-bar {
+    border: 1px solid black;
+    float: left;
+    grid-column: 1;
+    grid-row: 1;
+}
+.logo {
+    border: 1px solid black;
+    padding: 0;
+    grid-column: 2;
+}
+#header-img {
+    height: 50px;
+    position: absolute;
+    
+    border: 1px solid black;
+}
+#open-menu, #close-menu:hover {
+    cursor: pointer;
+}
+#open-menu {
+    justify-content: flex-start;
+}
+#close-menu, .menu {
+    display: none;
+    height: 30px;
+    font-size: 16px;
+    
+    border: 1px solid black;
+}
+a, li {
+    text-decoration: none;
+    list-style: none;
+}
+.pics {
+    max-width: 250px;
+    max-height: 500px;
+    border-radius: 5px;
+
+}
+#banner {
+  max-width: 100%;
+  height: auto;
 }

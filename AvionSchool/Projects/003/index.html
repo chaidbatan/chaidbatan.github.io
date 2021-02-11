@@ -8,10 +8,10 @@
     <div class="container">
     <!--HEADER-->
         <header id="header">
-        <a href="#home">Logo<img src="" id="header-img"></a>
+            <div class="logo"><a href="#"><img src="./assets/flora.png" id="header-img"></a></div>
             <nav id="nav-bar">
-                <div id="open-menu"><i class="fas fa-bars"></i></div>
-                <div id="close-menu"><i class="fas fa-times"></i></div>
+                <div id="open-menu"><i class="fas fa-bars fa-lg"></i></div>
+                <div id="close-menu"><i class="fas fa-times fa-lg"></i></div>
                 <ul class="menu">
                     <li><a  class="nav-link" href="#">Home</a></li>
                     <li><a  class="nav-link" href="#">About Us</a></li>
@@ -20,49 +20,53 @@
             </nav>
         </header>
     <!--CALL TO ACTION with VIDEO-->
-        <div class="call-to-action">
-            <video width="100%" height="240" autoplay loop muted>
-                <source src="assets/" type="video/mp4">
-            </video>
-            <h1>Free Delivery within Metro Manila</h1>
+        <div id="call-to-action"  class="items">
+            <img src="https://images.unsplash.com/photo-1567696153798-9111f9cd3d0d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="" id="banner">
+            <h1>Free Delivery</h1>
+            <h5><i>within Metro Manila</i></h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum doloremque ab aut sequi quibusdam quas?</p>
             <button id="call-to-action">Order Now</button>
         </div>
     <!-- ABOUT US -->
-        <div class="about-us">
+        <div id="about-us"  class="items">
             <h2>ABOUT US</h2>
+            <video width="100%" height="auto" controls>
+                <source src="assets/pexels-roman-odintsov-6016143.mp4" type="video/mp4">
+            </video>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sit fuga accusantium. Deserunt quae quia reprehenderit, ea repellendus quod nostrum magnam minima hic amet maiores voluptas perspiciatis facere incidunt voluptates impedit exercitationem qui debitis? Dolore delectus ipsa sunt sit nisi?</p>
-            <div id="features">
-                <div class="features">
-                    <h3>Affordable</h3>
-                    <i></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, eaque!</p>
-                </div>
-                <div class="features">
-                    <h3>Fast</h3>
-                    <i></i>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, a.</p>
-                </div>
-                <div class="features">
-                    <h3>Instagrammable</h3>
-                    <i></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, amet?</p>
-                </div>
+        </div>
+    <!-- FEATURES -->
+        <div id="features"  class="items">
+            <h2>WHY BUY FROM FLORA?</h2>
+            <div class="features">
+                <h4>Affordable</h4>
+                <i></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, eaque!</p>
+            </div>
+            <div class="features">
+            <h4>Fast Shipping</h4>
+                <i></i>
+                <p>We use 3rd party On-The-Day Delivery Service such as LalaMove, Angkas, Grab and etc.</p>
+            </div>
+            <div class="features">
+                <h4>Premium Quality</h4>
+                <i></i>
+                <p>We only use imported roses. Bud / Petal size is 1.5" to 2.5" in full bloom, almost double the size of local roses. Carnations are either imported or farm-direct from our partner farm.</p>
             </div>
         </div>
     <!-- SHOP -->
-        <div>
-            <h2>Best Sellers</h2>
+        <div id="shop"  class="items">
+            <h2>shop</h2>
             <div>
-                <img src="" alt="pic1">
-                <img src="" alt="pic2">
-                <img src="" alt="pic1">
-                <img src="" alt="pic2">
+                <img src="https://images.unsplash.com/photo-1579198314865-955573957799?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="pic1" class="pics">
+                <img src="https://images.unsplash.com/photo-1605341778220-2652cd6c97c6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="pic1" class="pics">
+                <img src="https://images.unsplash.com/photo-1602136303098-f5aa2b9c9df9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=696&q=80" alt="pic2" class="pics">
+                <img src="https://images.unsplash.com/photo-1523694576729-dc99e9c0f9b4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80" alt="pic2" class="pics">
             </div>
             <button>Show More</button>
         </div>
     <!-- TESTIMONIALS -->
-        <div>
+        <div id="testimonials"  class="items">
             <h2 class="testimonials">Testimonials</h2>
             <ul>
                 <li>Lorem ipsum dolor sit amet.</li>
@@ -72,9 +76,9 @@
             </ul>
         </div>
     <!-- CLOSING -->
-        <div class="closing"></div>
+        <div id="closing"  class="items"></div>
     <!-- FOOTER -->
-        <footer id="footer">
+        <footer id="footer"   class="items">
             <h3>Follow Us</h3>
             <ul>
                 <li>Facebook</li>
@@ -82,6 +86,7 @@
                  <li>Twitter</li>
             </ul>
         </footer>
+    
     </div>
     <script src="script.js"></script>
 </body>

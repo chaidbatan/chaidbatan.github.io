@@ -8,6 +8,8 @@ closeMenu.addEventListener('click', hide);
 
 function show() {
     menu.style.display = 'block';
+    menu.style.padding = '0';
+    menu.style.margin ='0';
     closeMenu.style.display = 'block';
     openMenu.style.display = 'none';
 }
