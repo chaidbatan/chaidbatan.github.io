@@ -88,10 +88,11 @@ body {
     grid-template-rows: repeat(7, auto);
 }
 .items {
+    margin-top: 10%;
     margin-left: 10%;
     margin-right: 10%;
 }
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
     font-family: 'Market Deco', sans-serif;
     color: #3f413c;     
 
@@ -102,11 +103,15 @@ p {
 button {
     color: #3f413c;
     background-color: rgb(201, 167, 188);
+    border: none;
+    height: 30px;
+    border-radius: 5px;
 }
 #header {
-    background: rgb(201, 167, 188);
+    background: rgba(201, 167, 188, 1);
     color: blanchedalmond;
     position: fixed;
+    margin-bottom: 500px;
     width: 100%;
     height: 50px;
     font-size: 16px;
@@ -117,8 +122,7 @@ button {
     justify-content: space-between;
 }
 #nav-bar {
-    border: 1px solid black;
-    float: left;
+    left: 10%;
     grid-column: 1;
     grid-row: 1;
 }
@@ -130,10 +134,8 @@ button {
 #header-img {
     height: 50px;
     position: absolute;
-    
-    border: 1px solid black;
 }
-#open-menu, #close-menu:hover {
+#open-menu, #close-menu, button:hover {
     cursor: pointer;
 }
 #open-menu {
@@ -143,8 +145,18 @@ button {
     display: none;
     height: 30px;
     font-size: 16px;
-    
-    border: 1px solid black;
+}
+#banner {
+    display: flex;
+    position: relative;
+    background-image: url(https://images.unsplash.com/photo-1452827073306-6e6e661baf57?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1267&q=80);
+    background-size: cover;
+    height: auto;
+    width: 100%;
+
+}
+#about-us {
+    background-color: #bebab7;
 }
 a, li {
     text-decoration: none;
@@ -156,8 +168,26 @@ a, li {
     border-radius: 5px;
 
 }
-#banner {
-  max-width: 100%;
-  height: auto;
-  margin: 0;
+@media (min-width: 768px) {
+    #header {
+        display: grid;
+        
+    }
+    #open-menu, #close-menu {
+        display: none;
+    }
+    .logo {
+
+    }
+    .menu {
+        display: grid;
+        justify-content: space-around;
+        position: absolute;
+        grid-row: 1;
+        grid-column: 2;
+    }
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+    }
 }

@@ -5,36 +5,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="home">
     <!--HEADER-->
-        <header id="header">
-            <div class="logo"><a href="#"><img src="./assets/flora.png" id="header-img"></a></div>
-            <nav id="nav-bar">
-                <div id="open-menu"><i class="fas fa-bars fa-lg"></i></div>
-                <div id="close-menu"><i class="fas fa-times fa-lg"></i></div>
-                <ul class="menu">
-                    <li><a  class="nav-link" href="#">Home</a></li>
-                    <li><a  class="nav-link" href="#">About Us</a></li>
-                    <li><a  class="nav-link" href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-        </header>
-    <!--CALL TO ACTION with VIDEO-->
-        <div id="call-to-action"  class="items">
-            <img src="https://images.unsplash.com/photo-1452827073306-6e6e661baf57?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1267&q=80" alt="" id="banner">
-            <h1>Free Delivery</h1>
-            <h5><i>within Metro Manila</i></h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum doloremque ab aut sequi quibusdam quas?</p>
-            <button id="call-to-action">Order Now</button>
+        <div>
+            <header id="header">
+                <div class="logo"><a href="#home"><img src="./assets/flora.png" id="header-img"></a></div>
+                <nav id="nav-bar" class="items">
+                    <ul class="menu">
+                        <li><a  class="nav-link" href="#home">Home</a></li>
+                        <li><a  class="nav-link" href="#about-us">About Us</a></li>
+                        <li><a  class="nav-link" href="#contact">Contact Us</a></li>
+                    </ul>
+                    <div id="open-menu"><i class="fas fa-bars fa-lg"></i></div>
+                    <div id="close-menu"><i class="fas fa-times fa-lg"></i></div>
+                </nav>
+            </header>
+        </div>
+        
+    <!--CALL TO ACTION-->
+        <div id="banner">
+            <div id="call-to-action"  class="items">
+                <h1>Free Delivery</h1>
+                <h5><i>within Metro Manila</i></h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum doloremque ab aut sequi quibusdam quas?</p>
+                <button id="">Order Now</button>
+            </div>
         </div>
     <!-- ABOUT US -->
-        <div id="about-us"  class="items">
-            <h2>ABOUT US</h2>
+        <div id="about-us">
+            <div class="items">
+                <h2>about us</h2>
             <video width="100%" height="auto" controls>
                 <source src="assets/pexels-roman-odintsov-6016143.mp4" type="video/mp4">
             </video>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sit fuga accusantium. Deserunt quae quia reprehenderit, ea repellendus quod nostrum magnam minima hic amet maiores voluptas perspiciatis facere incidunt voluptates impedit exercitationem qui debitis? Dolore delectus ipsa sunt sit nisi?</p>
+            </div>
         </div>
+            
     <!-- FEATURES -->
         <div id="features"  class="items">
             <h2>WHY BUY FROM FLORA?</h2>
@@ -73,12 +80,24 @@
             </ul>
         </div>
     <!-- CLOSING -->
-        <div id="closing"  class="items"></div>
+        <div id="closing" class="items">
+            <form action="">
+                <h5>Stay up to date</h5>
+                <p>Subscribe to our newsletter to get promotional discounts and more!</p>
+                <input type="email" placeholder="email">
+                <button>Subscribe</button>
+            </form>
+        </div>
+        <div id="contact-us" class="items">
+            <h4>Contacts</h4>
+            <p>02-8123456</p>
+            <p>09192345671</p>
+        </div>
     <!-- FOOTER -->
         <footer id="footer"   class="items">
             <h3>Follow Us</h3>
             <ul>
-                <li>Facebook</li>
+                <li>Facebook</li>s
                 <li>Instagram</li>
                  <li>Twitter</li>
             </ul>
