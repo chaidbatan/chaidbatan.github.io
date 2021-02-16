@@ -167,7 +167,9 @@ h4 {
     flex-direction: row;
     justify-content: center;
 }
-
+#about-us-text {
+    margin-left: 10%;
+}
 #video {
     width: 500px;
     height: 100%;
@@ -207,6 +209,7 @@ b {
     align-items: center;
     text-align: center;
     line-height: 3;
+    margin: 2%;
 }
 #services ul li {
     font-size: 23px;
@@ -300,6 +303,7 @@ address {
     width: 100%;
     border-radius: 5px;
     padding: 7px;
+    margin: 5px;
 }
 text, #name-label, #email-label, #number-label {
     padding-top: 1em;
@@ -326,6 +330,9 @@ text, #name-label, #email-label, #number-label {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    #about-us-text {
+        margin-left: 0;
     }
     #video {
         position: relative;
