@@ -1,0 +1,140 @@
+<html>
+<head>
+    <title>Firmitas Landing Page</title>
+    <link rel="stylesheet" href="./firmitas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+</head>
+<body>
+    <header id="header">
+           <!-- <div id="header-img">
+                <img src="./assets/FIRMITAS LOGO_WHITE-logo.png" alt="firmitas logo" id="logo">
+            </div>
+            <div id="menu">
+                <div class="nav" id="open-menu"><a href="#"><i class="fas fa-bars"></i></a></div>
+                <div class="nav" id="close-menu"><a href="#"><i class="fas fa-times fa-lg"></i></a></div>
+            </div> -->
+            
+            <nav id="nav-bar" class="nav">
+                <a href="#home"><img src="./assets/FIRMITAS LOGO_WHITE-logo.png" alt="firmitas logo" id="logo"></a>
+                <ul id="nav">
+                    <li class="nav-link"><a href="#home">Home</a></li>
+                    <li class="nav-link"><a href="#about-us">About</a></li>
+                    <li class="nav-link"><a href="#works">Works</a></li>
+                    <li class="nav-link"><a href="#contacts">Contacts</a></li>
+                </ul>
+               <!-- <div class="nav" id="nav-c2a"><a href="./firmitas-form.html"><button>Get a Quote</button></a></div> -->
+                <div class="nav" id="open-menu"><a href="#"><i class="fas fa-bars"></i></a></div>
+                <div class="nav" id="close-menu"><a href="#"><i class="fas fa-times fa-lg"></i></a></div>
+            </nav>
+        </header>
+    <div class="container" id="home">
+        <section id="call-to-action" class="flex">
+            <div id="c2a-text" class="texts">
+                <h1>Architectural Design Services</h1>
+                <a href="#"><button class="btn">Get a Quote</button></a>
+            </div>
+            <div id="c2a-bg" class="visuals">
+                <img src="" alt="" id="c2a-img">
+            </div>
+        </section>
+        <section class="flex" id="about-us">
+            <div class="visuals">
+                <iframe width="500px" src="https://www.youtube.com/embed/M0KQjQAHWRk" id="video">
+                </iframe>
+            </div>
+            <div class="texts">
+                <h2>About Us</h2>
+                <p>We are <b>Firmitas Architects Inc.</b>, one of the youngest Architectural firms with the biggest undaunted vision yet. <b>Firmitas Architects Inc.</b> is a multidisciplinary group of young and idealisic Architects and Designers based in Pasay, Metro Manila, Philippines.
+                <br> Designing thru the first-hand experience is the utmost responsibility of our team. A purpose-driven directive is the first step towards transformational design.</p>
+            </div>
+        </section>
+        <section class="flex-center">
+            <h2>Why Choose Us?</h2>
+            <div class="flex-row">
+                <div class="features">
+                    <h4>We are <b id="">CREATIVE</b></h4>
+                    <p>Thinking outside the box when it comes to design concepts. Creating creative & effective solutions for all the stakeholders.</p>
+                </div>
+                <div class="features">
+                    <h4>We are <b>PASSIONATE</b></h4>
+                    <p>Young minds, fresh ideas strictly tied to effective application methods.</p>
+                </div>
+                <div class="features">
+                    <h4>We are <b>COLLABORATIVE</b></h4>
+                    <p>Valuing the client and insights they bring to the team. We follow a client-centered process.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <h2>Services Offered</h2>
+            <div id="services">
+                <ul>
+                    <li>Architectural Design</li>
+                    <li>Interior Design</li>
+                    <li>Architectural Consultation</li>
+                    <li>Masterplanning</li>
+                    <li>Project Management</li>
+                </ul>
+            </div>
+        </section>
+        <section class="flex-center" >
+            <h2>Our Works</h2>
+            <div class="flex-row">
+                <div class="works">
+                    <a href="#"><img src="./assets/interior.jpg" alt="" class="img">
+                        <div class="hover">
+                            <div class="text">See more</div>
+                        </div>
+                    <h3>Interior Design</h3></a>
+                    
+                   <!-- <h5>Iron Clad Restaurant</h5>
+                    <p>The team's first attempt at designing a Restaurant directly located at the heart of Manila.</p>
+                    -->
+                </div>
+                <div class="works" id="works">
+                    <a href="#"><img src="./assets/architectural.jpg" alt="" class="img">
+                        <div class="hover">
+                            <div class="text">See more</div>
+                        </div>
+                    <h3>Architectural Design</h3></a>
+                   <!-- <h5>Office Fit-Out</h5>
+                    <p>The team's first attempt at designing a Restaurant directly located at the heart of Manila.</p>
+                   -->
+                </div>
+                <div class="works">
+                    <a href="#"><img src="./assets/master-plan.jpg" alt="" class="img">
+                        <div class="hover">
+                            <div class="text">See more</div>
+                        </div>
+                    <h3>Masterplanning</h3></a>
+                   <!-- <h5>Ticao Altamar resort</h5>
+                    <p>The team's first attempt at designing a Restaurant directly located at the heart of Manila.</p>
+                    -->
+                </div>
+            </div>
+        </section>
+        <footer class="footer" id="footer">
+            <h3 style="color: white">Contacts</h3>
+            <div class="flex-row" id="contacts">
+                <div class="footer">
+                    <address>Pasay City, Metro Manila, Philippines
+                        <br>firmitas.architects@gmail.com
+                        <br>+632 08234768
+                    </address>
+                </div>
+            <div class="flex-row">
+                <div id="form">
+                    <p style="color: white;">Want to talk with main architect about your project?</p>
+                    <form action="firmitas-form.html" method="GET">
+                        <input class="inputs" type="text" name="name" id="name" placeholder="Name">
+                        <input class="inputs" type="email" name="email" id="email" placeholder="Email">
+                        <button type="submit" name="button" value="submit" id="submit">Get free consultation</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </div>
+        <script src="./script.js"></script>
+</body>
+</html>

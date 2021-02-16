@@ -149,11 +149,17 @@ button {
 #banner {
     display: flex;
     position: relative;
-    background-image: url(https://images.unsplash.com/photo-1452827073306-6e6e661baf57?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1267&q=80);
+    background-image: url(./assets/banner-crop.jpg);
     background-size: cover;
     height: auto;
     width: 100%;
-
+}
+#banner-img {
+    display: absolute;
+    max-width: 100%;
+    height: auto;
+    border:0;
+    z-index: 5;
 }
 #about-us {
     background-color: #bebab7;
@@ -171,7 +177,7 @@ a, li {
 @media (min-width: 768px) {
     #header {
         display: grid;
-        
+
     }
     #open-menu, #close-menu {
         display: none;
