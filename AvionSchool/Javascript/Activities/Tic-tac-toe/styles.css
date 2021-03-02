@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Unica+One&display=swap');
+
 body {
     text-align: center;
+    font-family: 'Unica One', cursive;
+    text-transform: uppercase;
+    background-color: #ffe3de;
+    color: #0a043c;
 }
 h1 {
     margin-top: 2%;
+    
+    
 }
 .container {
     display: grid;
@@ -12,11 +21,19 @@ h1 {
     margin-top: 10%;
 }
 .cell {
-    height: 100px;
-    width: 100px;
-    border: 2px solid black;
-    font-size: 10px;
+    height: 15vh;
+    width: 15vh;
+    border: 2px solid #0a043c;
+    font-size: 10vh;
+    font-family: 'Nanum Pen Script', cursive;
+    line-height: 15vh;
+    background-color: #a3ddcb;
 }
+button {
+    color: #0a043c;
+    font-size: 17px;
+}
+
 /*
 .box.x::before {
     content: 'X';
@@ -47,6 +64,6 @@ section {
     box-shadow: 0 0 0 1px #333333;
     border: 1px solid #333333;
     cursor: pointer;
-line-height: 100px;
+    line-height: 100px;
     font-size: 60px;
-}  */
+} 

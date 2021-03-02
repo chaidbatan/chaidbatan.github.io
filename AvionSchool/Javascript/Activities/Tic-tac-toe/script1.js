@@ -3,6 +3,7 @@ const statusDisplay = document.querySelector('.game-status');
 let gameActive = true;
 let currentPlayer = "X";
 let gameState = ["", "", "", "", "", "", "", ""];
+let moveState = 0
 
 
 const winningMsg = () => `Player ${currentPlayer} has won`;
@@ -10,9 +11,10 @@ const darwMsg = () => `Game ended in a draw`;
 const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
 
 statusDisplay.innerHTML = currentPlayerTurn();
-function handleCellPlayed(clickedCell, clickedCellINdex) {
-    gameState[clickedCellINdex] = currentPlayer;
+function handleCellPlayed(clickedCell, clickedCellIndex) {
+    gameState[clickedCellIndex] = currentPlayer;
     clickedCell.innerHTML = currentPlayer;
+    moveState += 1;
 
 }
 function handlePlayerChange() {
@@ -59,11 +61,11 @@ if (roundWon) {
 }
 function handleCellClick(clickedCellEvent) {
     const clickedCell = clickedCellEvent.target;
-    const clickedCellINdex = parseInt(clickedCell.getAttribute('data-cell-index'));
-    if (gameState[clickedCellINdex] !== "" || !gameActive) {
+    const clickedCellIndex = parseInt(clickedCell.getAttribute('data-cell-index'));
+    if (gameState[clickedCellIndex] !== "" || !gameActive) {
         return;
     }
-    handleCellPlayed(clickedCell, clickedCellINdex);
+    handleCellPlayed(clickedCell, clickedCellIndex);
     handleResultValidation();
 }
 function handleRestartGame() {
@@ -75,5 +77,30 @@ function handleRestartGame() {
                .forEach(cell => cell.innerHTML = "");
 }
 
+
+function prev() {
+    const cells = document.querySelectorAll('.cell')
+    moveState -= 1 // moveState = moveState - 1
+    console.log(gameState[moveState])
+    console.log(gameState)
+    const cell = cells[moveState]
+    console.log(cell)
+    cell.innerHTML = ""
+}
+
+function next() {
+    const cells = document.querySelectorAll('.cell')
+    
+    moveState += 1
+    if (moveState <= 8) {
+        const cell = cells[moveState-1]
+        cell.innerHTML = gameState[moveState-1]
+
+
+    }
+}
+
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick));
 document.querySelector('.game--restart').addEventListener('click', handleRestartGame);
+
+
