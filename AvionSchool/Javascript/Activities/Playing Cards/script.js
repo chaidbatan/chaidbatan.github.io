@@ -35,7 +35,7 @@ console.log(deck);
 //get the first element // either suit or rank
 //get the index
 //then compare
-function arrangedCards() {
+function cardsBySuit() {
 // temporary array holds objects with position and sort-value
   var mapped = deck.map(function(el, i) {
     return { index: i, value: el.toLowerCase() };
@@ -58,7 +58,7 @@ function arrangedCards() {
   });
   console.log(result);
 }
-arrangedCards()
+cardsBySuit()
 
 
 
