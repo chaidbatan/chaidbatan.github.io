@@ -90,8 +90,8 @@ console.log(deckInOrder);
 
 function dealCards() {
     shuffledCards()
-    let removed = deck.splice(0, 5);
-    return removed;
+    let deal = deck.splice(0, 5);
+    return deal;
 
 }
 console.log(dealCards());
