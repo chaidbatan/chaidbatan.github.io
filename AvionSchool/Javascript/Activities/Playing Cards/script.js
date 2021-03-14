@@ -15,7 +15,7 @@ for (var s = 0; s < 4; s++) {
         deck.push(values[v] + suits[s]);
     }
 }
-console.log(deck);
+//console.log(deck);
 
 
 function shuffledCards() {
@@ -27,8 +27,8 @@ function shuffledCards() {
         deck[i] = oldValue
     }
 }
-shuffledCards()
-console.log(deck);
+//shuffledCards()
+//console.log(deck);
 
 
 //split every item inside the sorting function
@@ -56,9 +56,9 @@ function cardsBySuit() {
   var result = mapped.map(function(el){
     return deck[el.index];
   });
-  console.log(result);
+//  console.log(result);
 }
-cardsBySuit()
+//cardsBySuit()
 
 
 
@@ -76,24 +76,62 @@ function ascendingOrder() {
     shuffledCards()
     return deckInOrder;
 }
-ascendingOrder()
-console.log(deckInOrder);
+//ascendingOrder()
+//console.log(deckInOrder);
 
 //cards in descending order
 function descendingOrder() {
     shuffledCards()
     return deckInOrder.reverse();
 }
-descendingOrder()
-console.log(deckInOrder);
+//descendingOrder()
+//console.log(deckInOrder);
 
 
 function dealCards() {
-    shuffledCards()
-    let deal = deck.splice(0, 5);
-    return deal;
-
+    
 }
-console.log(dealCards());
+shuffledCards()
+let newArray = [];
+for ( j = 0; j < 5; j++) {
+    let removed = deck.splice(0, 1);
+   
+    newArray[j] = removed
+    //console.log(j);
+    console.log(removed);
+   
+}
+console.log(newArray);
+
+
+//dealtCards = removed;
+let removed2 = deck.splice(0, 5);
+let dealtCards = [removed2, "b"];
+//console.log(dealtCards);
+
+
+//console.log(dealCards());
 console.log(deck.length);
+
+//console.log("want to play?");
+
+//const readline = require('readline').createInterface({
+//    input: process.stdin,
+//    output: process.stdout
+//});
+
+//let name;
+//while (name === "yes") {
+//    readline.question('want to play?', name => {
+//        console.log('hey there' + name);
+//        readline.close();
+//    });
+//}
+//let input; 
+//do {
+//    input = prompt('Enter text:');
+//    console.log(input);
+//} while (input !== ':q');
+
+
 
